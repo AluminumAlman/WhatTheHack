@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>What the hack?!</name>
+	<name>What the hack?! (Local)</name>
 	<author>Roolo</author>
 	<supportedVersions>
 		<li>1.0</li>
@@ -15,5 +15,5 @@ This mod depends on Hugslib. Load order should be: Hugslib -> What the Hack!?.
     <loadAfter>
 	  <li>UnlimitedHugs.HugsLib</li>
     </loadAfter>
-	<packageId>roolo.whatthehack</packageId>
+	<packageId>roolo.whatthehack_local</packageId>
 </ModMetaData>

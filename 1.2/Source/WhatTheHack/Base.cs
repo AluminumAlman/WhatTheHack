@@ -13,6 +13,7 @@ using WhatTheHack.Comps;
 using WhatTheHack.Recipes;
 using UnityEngine;
 using System.Diagnostics;
+using CombatExtended;
 
 namespace WhatTheHack
 {
@@ -241,7 +242,7 @@ namespace WhatTheHack
             if(cancelControlTurretTextures.Count == 0)
             {
                 Texture2D cancelTex = ContentFinder<Texture2D>.Get(("UI/Cancel")).GetReadableTexture();
-                List<ThingDef> allTurrets = (from td in DefDatabase<ThingDef>.AllDefs where td.thingClass == typeof(Building_TurretGun) select td).ToList();
+                List<ThingDef> allTurrets = (from td in DefDatabase<ThingDef>.AllDefs where td.thingClass == typeof(Building_TurretGunCE) select td).ToList();
                 foreach (ThingDef turretDef in allTurrets)
                 {
                     cancelControlTurretTextures.Add(turretDef.defName, turretDef.uiIcon.GetReadableTexture().AddWatermark(cancelTex));
